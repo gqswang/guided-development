@@ -6,6 +6,21 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Guided-dev: My example",
+      "type": "extensionHost",
+      "request": "launch",
+      "runtimeExecutable": "${execPath}",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}/backend",
+        "--extensionDevelopmentPath=${workspaceFolder}/vscode-my-contrib",
+    ],
+      "outFiles": [
+        "${workspaceFolder}/backend/out/**/*.js",
+        "${workspaceFolder/vscode-my-contrib/out/**/*.js",
+      ],
+      "preLaunchTask": "watch backend (webpack)"
+    },    
+    {
       "name": "Guided-dev: Simple example",
       "type": "extensionHost",
       "request": "launch",
